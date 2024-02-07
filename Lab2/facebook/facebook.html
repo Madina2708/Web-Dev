@@ -1,193 +1,92 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <style>
-        html,
-        body {
-            margin: 0;
-        }
-
-        body {
-            background-color: rgba(240, 242, 245, 255);
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        footer {
-            background-color: white;
-            color: gray;
-        }
-
-        footer div {
-            font-size: 15px;
-            width: 70%;
-            margin: auto;
-            padding: 10px;
-        }
-
-        #root {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-        .main {
-            width: 60%;
-            display: flex;
-            justify-content: space-between;
-
-            margin: auto;
-        }
-
-        .registration-box {
-            display: flex;
-            background-color: white;
-            padding: 10px 10px 20px 10px;
-            border-radius: 5px;
-            box-shadow: rgba(240, 242, 245, 255);
-            box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.262);
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        span:hover,
-        a:hover,
-        strong:hover {
-            text-decoration: underline;
-        }
-
-        input {
-            width: 350px;
-            border-radius: 5px;
-            padding: 12px 7px 12px 7px;
-            margin-top: 10px;
-            border-style: solid;
-            border-color: gainsboro;
-            box-sizing: content-box;
-            font-size: 15px;
-        }
-
-        input:focus {
-            outline: none;
-            box-shadow: 0px 0px 3px 0px rgb(35, 127, 255);
-        }
-
-        ::placeholder {
-            color: rgb(179, 179, 179);
-        }
-
-
-        #enter-button {
-            width: 100%;
-            font-size: 18px;
-            font-weight: bolder;
-            color: white;
-            background-color: rgba(24, 119, 242, 255);
-            padding: 13px 0 13px 0;
-            border: none;
-            border-radius: 5px;
-            margin: 10px 0 10px 0
-        }
-
-        #create-acc-button {
-
-            font-size: 18px;
-            font-weight: bolder;
-            color: white;
-            background-color: rgba(66, 183, 42, 255);
-            padding: 13px 7px 13px 7px;
-            border: none;
-            border-radius: 5px;
-            margin: 15px 0 0 0;
-            transition: background-color 300ms ease 0s;
-        }
-
-        #create-acc-button:hover {
-            background-color: #3c7d2f;
-        }
-
-        img {
-            margin: -20px;
-            height: 70px;
-        }
-
-        h1 {
-            width: 75%;
-            font-size: 25px;
-            font-weight: 500;
-        }
-
-        a {
-            color: #1877f2;
-            text-align: center;
-            font-weight: 800;
-            font-size: 13px;
-            margin: 5px 0 8px 0;
-        }
-
-        .registration-box hr {
-            width: 90%;
-            border: none;
-            height: 1px;
-            background-color: rgb(211, 211, 211);
-        }
-
-        .main div p {
-            text-align: center;
-        }
-
-        .welcome {
-            margin-top: 50px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div id="root">
-        <div class="main">
-            <div class="welcome">
-                <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg">
-                <h1>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми</h1>
+    <main>
+        <div class="row">
+            <div class="col-logo">
+                <img src="4lCu2zih0ca.svg" alt="facebook">
+                <h2>Facebook helps you connect and share with the people in your life.</h2>
             </div>
-            <div>
-                <div class="registration-box">
-                    <form>
-                        <input type="text" id="email" placeholder="Электронный адрес или номер телефона" required>
-                        <input type="password" id="password" placeholder="Пароль" required>
-                        <button id="enter-button">Вход</button>
-                        <a>Забыли пароль?</a>
-                        <hr>
-                        <button id="create-acc-button">Создать новый аккаунт</button>
-                    </form>
-                </div>
-                <p><strong>Создать Страницу</strong> знаменитости, муыкальной группы или компании</p>
+            <div class="col-form">
+                <form class="form-container" action="">
+                    <input type="text" placeholder="Email address or phone number">
+                    <input type="password" placeholder="Password">
+                    <button class="btn-login">Log in</button>
+                    <a href="">Forgotten password?</a>
+                    <button class="btn-new">Create new account</button>
+                </form>
+                <p><a href="">Create a Page</a> or a celebrity, brand or business.</p>
             </div>
         </div>
-    </div>
+    </main>
     <footer>
-        <div>
-            <p><span>Русский</span> <span>English (US)</span> <span>Türkçe</span> <span>Bahasa</span> <span>Indonesia
-                    中文(简体)</span> <span>Қазақша</span> <span>한국어</span></p>
-            <hr>
-            <p>
-                Регистрация Вход MessengerFacebook LiteВидео Места Игры MarketplaceMeta PayMeta StoreMeta QuestImagine
-                with
-                Meta AIInstagramThreads Благотворительные акции Услуги Центр информации о выборах Политика
-                конфиденциальности Центр конфиденциальности Группы Информация Создать рекламу Создать
-                Страницу Разработчикам Вакансии Файлы cookie Рекламные предпочтения Условия использования Справка
-                Загрузка
-                контактов и лица, не являющиеся пользователями Настройки Журнал действий
-            </p>
-            <p>Meta © 2024</p>
-        </div>
+        <div class="footer-contents">
+            <ol>
+                <li>English (UK)</li>
+            <li><a href="">Русский</a></li>
+            <li><a href="">Türkçe</a></li>
+            <li><a href="">Bahasa Indonesia</a></li>
+            <li><a href="">中文(简体)</a></li>
+            <li><a href="">Қазақша    </a></li>
+            <li><a href="">Deutsch</a></li>
+            <li><a href="">한국어</a></li>
+            <li><a href="">Shqip</a> </li>
+            <li><a href="">Español </a></li>
+            <li><a href="">Português (Brasil)    </a></li>
+            <li><button>+</button></li>
+           </ol> 
+           <ol>
+            <li><a href="">Sign Up</a></li>
+            <li><a href="">Log In </a></li>
+            <li><a href="">Messenger</a></li>
+            <li><a href="">Facebook Lite</a></li>
+            <li><a href="">Watch</a></li>
+            <li><a href="">People</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Page categories</a></li>
+            <li><a href="">Places</a></li>
+            <li><a href="">Games</a></li>
+            <li><a href="">Locations</a></li>
+            <li><a href="">Marketplace</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">PayGroups</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Oculus</a></li>
+            <li><a href="">Portal</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Local</a></li>
+            <li><a href="">Sign Up</a></li>
+            <li><a href="">Log In </a></li>
+            <li><a href="">Messenger</a></li>
+            <li><a href="">Facebook Lite</a></li>
+            <li><a href="">Watch</a></li>
+            <li><a href="">People</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Page categories</a></li>
+            <li><a href="">Places</a></li>
+            <li><a href="">Games</a></li>
+            <li><a href="">Locations</a></li>
+            <li><a href="">Marketplace</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">PayGroups</a></li>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Oculus</a></li>
+            <li><a href="">Portal</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Local</a></li>
+            </ol>
+            <small>Meta © 2024</small>
         </div>
     </footer>
-
 </body>
-
 </html>
