@@ -38,7 +38,7 @@ input.addEventListener("keyup", e => {
 });
 addButton.addEventListener("click", () => {
     let todo = input.value.trim();
-    if (!todo) {
+    if (!todo || todo === "asd") {
         return
     }
     addTodo(todo);
@@ -46,6 +46,7 @@ addButton.addEventListener("click", () => {
 
 function addTodo(todo) {
     input.value = "";
+    const value=
     todosJson.unshift({ name: todo, status: 'active' });
     localStorage.setItem("todos", JSON.stringify(todosJson));
     showTodos();
@@ -70,3 +71,11 @@ function remove(todo) {
     showTodos();
     localStorage.setItem("todos", JSON.stringify(todosJson));
 }
+
+
+
+
+
+
+
+
